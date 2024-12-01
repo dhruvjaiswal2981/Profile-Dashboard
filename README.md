@@ -62,4 +62,4 @@
 
 ## Deployment
 - Live Demo: The application is hosted on Netlify.
-- Access it here: https://checklist-system-gfhq.onrender.com
+- Access it here: https://profiles-dash.netlify.app/
