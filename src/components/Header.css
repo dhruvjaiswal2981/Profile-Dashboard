@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header-title h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #3498db;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header-title h2 {
+      font-size: 16px;
+    }
+  }
+  

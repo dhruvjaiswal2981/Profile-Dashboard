@@ -1,0 +1,171 @@
+.profile-card {
+  max-width: 420px; 
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0; /* Light border for softer visual */
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12); /* More subtle shadow for depth */
+  font-family: "Arial", sans-serif;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.avatar {
+  width: 72px;
+  height: 72px; /* Slightly larger avatar */
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px; /* Larger font for clarity */
+  font-weight: bold;
+  border-radius: 50%;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle shadow for dimension */
+}
+
+.details h3 {
+  margin: 0;
+  font-size: 22px; /* Slightly larger font size for emphasis */
+  font-weight: 600;
+  color: #2c3e50; /* Darker color for better contrast */
+}
+
+.details p {
+  margin-top: 6px; /* Slight gap between name and subtitle */
+  font-size: 16px; /* Bigger text for clarity */
+  color: #6c757d;
+}
+
+.info-section {
+  margin-bottom: 20px;
+  background-color: #f8f9fa; /* Light background for separation */
+  padding: 18px; /* More padding for a spacious feel */
+  border-radius: 8px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px; /* Increased bottom margin for more breathing space */
+}
+
+.info-row:last-child {
+  margin-bottom: 0;
+}
+
+.info-row p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #495057;
+}
+
+.info-row h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #212529;
+}
+
+.info-menu {
+  background: none;
+  border: none;
+  font-size: 20px; /* Slightly larger icon size */
+  color: #adb5bd;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.info-menu:hover {
+  color: #6c757d;
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 14px;
+  background-color: #ffffff;
+  color: #007bff;
+  border: 1px dashed #ced4da;
+  border-radius: 8px; /* Slightly rounded corners */
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #f1f3f5;
+  color: #0056b3;
+}
+
+.footer-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px; /* More gap between buttons */
+  margin-top: 16px;
+}
+
+.assign-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.assign-button:hover {
+  background-color: #0056b3;
+}
+
+.add-widget-button {
+  background-color: white;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.add-widget-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.highlight.yellow {
+  color: #f39c12;
+  font-weight: bold;
+}
+
+.highlight.green {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.info-col{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}

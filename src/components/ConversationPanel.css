@@ -1,0 +1,144 @@
+.conversation-panel {
+  flex: 2;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  max-height: 80vh; /* To constrain the panel height */
+  overflow: hidden; /* Prevents content overflow */
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto; /* Allows scrolling if messages exceed space */
+  margin-bottom: 15px;
+  padding-right: 10px; /* Add padding to avoid scrollbar overlap */
+  scrollbar-width: thin; /* For modern browsers */
+}
+
+.messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 4px;
+}
+
+.messages::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+.message {
+  padding: 10px 15px;
+  margin: 8px 0;
+  border-radius: 12px;
+  max-width: 75%; /* Messages won't stretch the full width */
+  word-wrap: break-word; /* Wrap long words properly */
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.message.sent {
+  background-color: #3498db;
+  color: white;
+  align-self: flex-end;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fade-in 0.2s ease-in-out;
+}
+
+.message.received {
+  background-color: #f7f7f7;
+  color: #333;
+  align-self: flex-start;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fade-in 0.2s ease-in-out;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  border-top: 1px solid #ddd;
+  padding: 15px 0 0;
+  margin-top: auto; /* Sticks input to the bottom */
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 4px rgba(52, 152, 219, 0.5);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05); /* Slight scaling for a hover effect */
+}
+
+button:active {
+  background-color: #1c6391;
+  transform: scale(0.95); /* Subtle press effect */
+}
+
+.empty-message {
+  text-align: center;
+  color: #bbb;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+/* Fade-in animation for messages */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .conversation-panel {
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  .input-area {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
